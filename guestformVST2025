@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUEST FORM 2025 - VERTICAL SAILING TOUR</title>
+</head>
+<body>
+    <h2>GUEST FORM 2025 - VERTICAL SAILING TOUR</h2>
+    <form>
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="M"> <label for="male">M</label>
+        <input type="radio" id="female" name="gender" value="F"> <label for="female">F</label><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone (with country code):</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="document">Document number (document you will be travelling with):</label>
+        <input type="text" id="document" name="document" required><br><br>
+
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality" required>
+            <option value="">Select your country</option>
+            <option value="Italy">Italy</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+            <option value="UK">United Kingdom</option>
+        </select><br><br>
+
+        <label for="medical">Do you have any medical conditions, allergies, or health issues?</label><br>
+        <textarea id="medical" name="medical"></textarea><br><br>
+
+        <label for="food">Food allergies:</label><br>
+        <textarea id="food" name="food"></textarea><br><br>
+
+        <label for="beverages">What types of beverages do you prefer to drink while on board?</label>
+        <select id="beverages" name="beverages">
+            <option value="soft drinks">Soft Drinks</option>
+            <option value="juice">Juice</option>
+            <option value="beer">Beer</option>
+            <option value="wine">Wine</option>
+        </select><br><br>
+
+        <label for="tshirt">T-shirt size:</label>
+        <select id="tshirt" name="tshirt">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select><br><br>
+
+        <label>Climbing Level:</label><br>
+        <input type="radio" id="new" name="climbing" value="new"> <label for="new">New to Climbing / Occasional Climber</label><br>
+        <input type="radio" id="beginner" name="climbing" value="beginner"> <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="climbing" value="intermediate"> <label for="intermediate">Intermediate</label><br>
+        <input type="radio" id="advanced" name="climbing" value="advanced"> <label for="advanced">Advanced</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
