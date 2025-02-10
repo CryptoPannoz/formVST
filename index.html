@@ -30,15 +30,32 @@
         <label for="document">Document number (document you will be travelling with):</label>
         <input type="text" id="document" name="document" required><br><br>
 
-        <label for="nationality">Nationality:</label>
-        <select id="nationality" name="nationality" required>
-            <option value="">Select your country</option>
-            <option value="Italy">Italy</option>
-            <option value="France">France</option>
-            <option value="Spain">Spain</option>
-            <option value="Germany">Germany</option>
-            <option value="UK">United Kingdom</option>
-        </select><br><br>
+      <label for="nationality">Nationality:</label>
+<select id="nationality" name="nationality" required>
+    <option value="">Select your country</option>
+</select><br><br>
+
+<script>
+    document.addEventListener("DOMContentLoaded", async function () {
+        const countrySelect = document.getElementById("nationality");
+
+        try {
+            // Caricare il file JSON
+            const response = await fetch("js/countries.json");
+            const countries = await response.json();
+
+            // Popolare la select con le nazioni
+            countries.forEach(country => {
+                let option = document.createElement("option");
+                option.value = country.code; // Usa il codice del paese come valore
+                option.textContent = country.name; // Mostra il nome del paese
+                countrySelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error("Errore nel caricamento delle nazioni:", error);
+        }
+    });
+</script>
 
         <label for="medical">Do you have any medical conditions, allergies, or health issues?</label><br>
         <textarea id="medical" name="medical"></textarea><br><br>
